@@ -1,0 +1,93 @@
+This file lists all known errors in 
+The Microcontroller Idea Book 
+by Jan Axelson
+jaxelson@janaxelson.com
+http://www.janaxelson.com
+
+The first printing is Copyright 1994.
+The second printing is Copyright 1994, 1997.
+
+The following errors are in both printings:
+
+Page 18.
+In Table 2-2:
+pin 18 is XTAL2 output
+pin 19 is XTAL1 Input
+
+Page 50.
+Due to many reported problems in using various EEPROMs with the 8052-Basic circuit, I recommend using NVRAM or EPROM. 
+
+Page 56.
+Under "Adding More NVRAM or EEPROM":
+Change:
+pin 10 of U4
+to
+pin 10 of U6
+
+Page 84.
+Change:
+STRING  expressions,expression2
+to
+STRING  expression1, expression2-1
+
+Page 121. Figure 7-9. On the 74HCT32, the -READ input should be pin 4, and 
+the output should be pin 6.
+
+Page 122.
+Under "Testing the Keypad":
+Change
+Listing 7-3 tests Figure 4's circuit.
+to
+Listing 7-3 tests Figure 7-9's circuit.
+
+Page 122
+Under "Testing the Keypad", fifth paragraph:
+Change
+In line 110, 8+1FF0h=1FF8h, and the value stored at 1FF8h in
+to
+In line 110, 8+1F00h=1F08h, and the value stored at 1F08h in
+
+Page 142.
+In Table 8-2, under Function set:
+Change
+N: dual (1), single (1) line display
+to
+N: dual (1), single (0) line display
+
+Page 147.
+In Listing 8-4, you may need a delay loop between lines 830 and 840
+and between lines 920 and 930 (to wait until the LCD isn't busy).
+
+On page 244 (Listing 14-2), change line 9130 from:
+9130 IF (G<>49.OR.G<>54) THEN END
+to:
+9130 IF (G<49.OR.G>54) THEN END
+
+The following errors are in the first printing only:
+
+Page 39. Change:
+20 END
+to:
+40 END
+
+Page 59. In Figure 4-5, change the output pin of U10B from pin 8 to pin 5.
+
+Page 79 (from Seymour M Foos). Change:
+ON X GOT0 100,200,300
+to:
+ON X GOSUB 100, 200, 300 
+
+Page 141 (from Ton Grift). In Table 8-1, pin 1 is Signal ground and 
+pin 2 is Supply voltage (+5V).
+
+Page 265. In Listing B-1, change line 175 from:
+CHECK=CHECK+CH1
+to:
+CHECK=CHECK+CH
+
+For the latest updates in vendor and product listings, visit Lakeview 
+Research on the web at 
+
+http://www.janaxelson.com
+
+
