@@ -1,0 +1,1343 @@
+L51 LINKER/LOCATOR V3.22                                                                  28/10/94  19:47:46  PAGE 1
+
+
+MS-DOS L51 LINKER/LOCATOR V3.22, INVOKED BY:
+C:\F\BIN\L51.EXE BAS52.OBJ, BAS52FP.OBJ, BASPLUS.OBJ TO BASPLUS.ABS IXREF NOOVERLAY RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  BAS52.OBJ (BAS52)
+  BAS52FP.OBJ (BAS52FP)
+  BASPLUS.OBJ (BASPLUS)
+
+
+LINK MAP OF MODULE:  BASPLUS.ABS (BAS52)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *  X D A T A   M E M O R Y  * * * * * * *
+            XDATA   0000H     005FH     ABSOLUTE     
+                    005FH     00A1H                  *** GAP ***
+            XDATA   0100H     002DH     ABSOLUTE     
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0002H     ABSOLUTE     
+                    0002H     0001H                  *** GAP ***
+            CODE    0003H     0008H     ABSOLUTE     
+            CODE    000BH     0008H     ABSOLUTE     
+            CODE    0013H     0008H     ABSOLUTE     
+            CODE    001BH     0008H     ABSOLUTE     
+            CODE    0023H     0008H     ABSOLUTE     
+            CODE    002BH     0005H     ABSOLUTE     
+            CODE    0030H     04CFH     ABSOLUTE     
+                    04FFH     0026H                  *** GAP ***
+            CODE    0525H     1466H     ABSOLUTE     
+                    198BH     0005H                  *** GAP ***
+            CODE    1990H     0003H     ABSOLUTE     
+            CODE    1993H     05E5H     ABSOLUTE     
+            CODE    1F78H     0073H     ABSOLUTE     
+            CODE    1FEBH     000DH     ABSOLUTE     
+            CODE    1FF8H     0008H     ABSOLUTE     
+                    2000H     0002H                  *** GAP ***
+            CODE    2002H     0001H     ABSOLUTE     
+                    2003H     0045H                  *** GAP ***
+            CODE    2048H     0003H     ABSOLUTE     
+                    204BH     0025H                  *** GAP ***
+            CODE    2070H     0004H     ABSOLUTE     
+                    2074H     0004H                  *** GAP ***
+            CODE    2078H     0004H     ABSOLUTE     
+                    207CH     0084H                  *** GAP ***
+            CODE    2100H     0771H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  BASPLUS.ABS (BAS52)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        BAS52
+  C:0783H         PUBLIC        BCK
+  C:1378H         SYMBOL        AABS
+  C:1736H         SYMBOL        AADD
+  C:146DH         SYMBOL        AANL
+  C:11C9H         SYMBOL        AATAN
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 2
+
+
+  C:096DH         SYMBOL        AC1
+  C:1396H         SYMBOL        ACBYTE
+  D:00E0H         SYMBOL        ACC
+  C:1156H         SYMBOL        ACOS
+  C:139FH         SYMBOL        ADBYTE
+  C:05D4H         SYMBOL        ADDPTR
+  C:13F3H         SYMBOL        ADIV
+  C:126BH         SYMBOL        AEL1
+  C:1259H         SYMBOL        AELP
+  C:13C4H         SYMBOL        AEQ
+  C:1310H         SYMBOL        AETOX
+  C:1337H         SYMBOL        AEXL
+  C:1314H         SYMBOL        AEXP
+  C:1706H         SYMBOL        AFREE
+  C:13D0H         SYMBOL        AGE
+  C:1492H         SYMBOL        AGET
+  C:13AEH         SYMBOL        AGT
+  C:1363H         SYMBOL        AI1
+  C:136BH         SYMBOL        AI2
+  C:1377H         SYMBOL        AI3
+  C:1356H         SYMBOL        AINT
+  C:0D50H         SYMBOL        AL
+  C:13D4H         SYMBOL        ALE
+  C:1716H         SYMBOL        ALEN
+  C:12A9H         SYMBOL        ALN
+  C:12D8H         SYMBOL        ALN11
+  C:12CEH         SYMBOL        ALNE
+  C:12BCH         SYMBOL        ALNL
+  C:12E1H         SYMBOL        ALNO
+  C:1395H         SYMBOL        ALPAR
+  C:13BFH         SYMBOL        ALT
+  C:1199H         SYMBOL        AMUL
+  C:13CAH         SYMBOL        ANE
+  C:138AH         SYMBOL        ANEG
+  C:147FH         SYMBOL        ANOT
+  C:0D45H         SYMBOL        ANU
+  C:1476H         SYMBOL        AORL
+  C:14CEH         SYMBOL        AP1
+  C:14D2H         SYMBOL        APCON
+  C:14C8H         SYMBOL        ARCAP2
+  N:0024H         SYMBOL        ARGF
+  C:13DAH         SYMBOL        ARND
+  C:137EH         SYMBOL        ASGN
+  C:115AH         SYMBOL        ASIN
+  C:1276H         SYMBOL        ASQR
+  N:0009H         SYMBOL        ASTKA
+  N:0001H         SYMBOL        ASTKAH
+  C:1711H         SYMBOL        ASUB
+  C:14BCH         SYMBOL        AT2CON
+  C:11B9H         SYMBOL        ATAN
+  C:14C0H         SYMBOL        ATCON
+  C:14AAH         SYMBOL        ATIM0
+  C:14B0H         SYMBOL        ATIM1
+  C:14B6H         SYMBOL        ATIM2
+  C:171EH         SYMBOL        ATIME
+  C:14C4H         SYMBOL        ATMOD
+  C:1113H         SYMBOL        ATTAB
+  C:13A7H         SYMBOL        AXBYTE
+  C:1481H         SYMBOL        AXRL
+  C:0FDAH         SYMBOL        AXTAL
+  C:1640H         SYMBOL        AXTAL0
+  C:1645H         SYMBOL        AXTAL1
+  C:166EH         SYMBOL        AXTAL2
+  C:1208H         SYMBOL        AXTAL3
+  C:1249H         SYMBOL        A_D
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 3
+
+
+  C:14A2H         SYMBOL        A_IE
+  C:14A6H         SYMBOL        A_IP
+  D:00F0H         SYMBOL        B
+  N:0027H         SYMBOL        BABC
+  C:0833H         SYMBOL        BCHR
+  N:0007H         SYMBOL        BELL
+  C:0422H         SYMBOL        BG1
+  C:042AH         SYMBOL        BG2
+  C:043DH         SYMBOL        BG3
+  N:0032H         SYMBOL        BI
+  N:002CH         SYMBOL        BO
+  N:0013H         SYMBOL        BOFAH
+  N:0014H         SYMBOL        BOFAL
+  C:07F5H         SYMBOL        BR0
+  C:0842H         SYMBOL        BR2
+  N:0008H         SYMBOL        BS
+  C:0AA5H         SYMBOL        B_C
+  C:0F24H         SYMBOL        B_TXA
+  C:0CF7H         SYMBOL        C0
+  C:1008H         SYMBOL        C0C
+  N:0034H         SYMBOL        C0ORX1
+  C:0CFEH         SYMBOL        C1
+  C:1013H         SYMBOL        C1C
+  C:0D07H         SYMBOL        C2
+  C:1012H         SYMBOL        C2C
+  C:1018H         SYMBOL        C3C
+  C:1670H         SYMBOL        CBIAS
+  C:183CH         SYMBOL        CC1
+  C:04E8H         SYMBOL        CCAL
+  C:0682H         SYMBOL        CCLR3
+  C:1836H         SYMBOL        CCONT
+  C:0813H         SYMBOL        CILOOP
+  C:0460H         SYMBOL        CIPROG
+  N:001EH         SYMBOL        CIUB
+  C:07BAH         SYMBOL        CI_RET
+  N:001AH         SYMBOL        CKS_B
+  C:1F78H         SYMBOL        CKS_I
+  C:1052H         SYMBOL        CL1
+  C:1057H         SYMBOL        CL2
+  C:1075H         SYMBOL        CL3
+  C:1077H         SYMBOL        CL6
+  C:1080H         SYMBOL        CL7
+  C:1031H         SYMBOL        CLIST
+  C:0F18H         SYMBOL        CLN_UP
+  C:0673H         SYMBOL        CL_1
+  C:0681H         SYMBOL        CL_2
+  C:177CH         SYMBOL        CMND1
+  C:17C2H         SYMBOL        CMND3
+  C:17DBH         SYMBOL        CMND5
+  C:010DH         SYMBOL        CMNDD
+  C:0859H         SYMBOL        CMNDLK
+  C:1792H         SYMBOL        CMNDR
+  N:004DH         SYMBOL        CMNDSP
+  C:1799H         SYMBOL        CMNX
+  C:11F1H         SYMBOL        CMPLK
+  C:0FFFH         SYMBOL        CN0
+  C:0652H         SYMBOL        CNEW
+  N:0003H         SYMBOL        CNTRLC
+  N:0004H         SYMBOL        CNTRLD
+  N:0035H         SYMBOL        CNT_S
+  C:0B09H         SYMBOL        CNULL
+  C:0FFAH         SYMBOL        CNX
+  N:001BH         SYMBOL        COB
+  N:0017H         SYMBOL        CONB
+  C:0FF0H         SYMBOL        CONST
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 4
+
+
+  X:0050H         SYMBOL        CONVT
+  N:001CH         SYMBOL        COUB
+  C:0467H         SYMBOL        CPROG
+  C:0EAAH         SYMBOL        CPS
+  N:000DH         SYMBOL        CR
+  C:03E3H         SYMBOL        CR0
+  C:03EFH         SYMBOL        CR0_1
+  C:03FAH         SYMBOL        CR1
+  C:0406H         SYMBOL        CR2
+  C:1774H         SYMBOL        CRAM
+  C:069BH         SYMBOL        CRLF
+  C:0699H         SYMBOL        CRLF2
+  C:0534H         SYMBOL        CROM
+  C:06A3H         SYMBOL        CRP
+  C:03D7H         SYMBOL        CRS
+  C:0387H         SYMBOL        CRST
+  C:0806H         SYMBOL        CRUN
+  C:0B48H         SYMBOL        CS1
+  C:0BBEH         SYMBOL        CSC
+  C:0B4CH         SYMBOL        CSETUP
+  C:1415H         SYMBOL        CSTAKA
+  C:1413H         SYMBOL        CSTAKA2
+  N:0011H         SYMBOL        CSTKA
+  N:0000H         SYMBOL        CSTKAH
+  C:07C4H         SYMBOL        CSTS
+  C:0A1FH         SYMBOL        CSY
+  C:1F7EH         SYMBOL        CS_I
+  C:1768H         SYMBOL        CXFER
+  X:0113H         SYMBOL        CXTAL
+  B:00D0H.7       SYMBOL        CY
+  C:0F13H         SYMBOL        C_1
+  C:0F0EH         SYMBOL        C_2
+  N:002EH         SYMBOL        C_BIT
+  C:07D8H         SYMBOL        C_EX
+  C:0538H         SYMBOL        C_K
+  C:1455H         SYMBOL        C_T2
+  C:0EC7H         SYMBOL        C_TST
+  C:05D2H         SYMBOL        D1
+  N:0096H         SYMBOL        DACK
+  C:117DH         SYMBOL        DBTWO
+  C:05C2H         SYMBOL        DCMPX
+  C:1574H         SYMBOL        DEC3210
+  C:1630H         SYMBOL        DEC76
+  C:05B8H         SYMBOL        DECDP
+  C:05B6H         SYMBOL        DECDP2
+  C:11F4H         SYMBOL        DEC_ASTKA
+  C:1572H         SYMBOL        DEC_R
+  C:0EE2H         SYMBOL        DELTST
+  N:0004H         SYMBOL        DIGIT
+  N:002FH         SYMBOL        DIRF
+  C:0621H         SYMBOL        DLD
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  C:0E9CH         SYMBOL        DP_B
+  C:0EA3H         SYMBOL        DP_T
+  N:0031H         SYMBOL        DRQ
+  C:0EE9H         SYMBOL        DT1
+  C:1845H         SYMBOL        DTEMP
+  N:0003H         SYMBOL        DTYPE
+  C:0A03H         SYMBOL        DUBSUB
+  C:0DCDH         SYMBOL        D_CHK
+  C:0AF9H         SYMBOL        D_L1
+  C:1FB5H         SYMBOL        E10X
+  C:1F89H         SYMBOL        E11X
+  C:1F81H         SYMBOL        E14X
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 5
+
+
+  C:1FA6H         SYMBOL        E15X
+  C:1F9AH         SYMBOL        E16X
+  C:173BH         SYMBOL        E1X
+  C:187DH         SYMBOL        E1XX
+  C:1746H         SYMBOL        E2X
+  C:1820H         SYMBOL        E3X
+  C:09BEH         SYMBOL        E3XX
+  C:0BC2H         SYMBOL        E4XX
+  C:1203H         SYMBOL        E4YY
+  C:180EH         SYMBOL        E5X
+  C:1756H         SYMBOL        E6X
+  C:17FCH         SYMBOL        E7X
+  B:00A8H.7       SYMBOL        EA
+  C:0CE6H         SYMBOL        EATC
+  C:124AH         SYMBOL        EBIAS
+  C:0369H         SYMBOL        EIG
+  C:0E4FH         SYMBOL        EIGP
+  C:0C0FH         SYMBOL        EK
+  N:0029H         SYMBOL        ENDBIT
+  N:0001H         SYMBOL        EOF
+  C:0F46H         SYMBOL        EP1
+  C:0F4AH         SYMBOL        EP2
+  C:0F70H         SYMBOL        EP3
+  C:0F72H         SYMBOL        EP4
+  C:0F83H         SYMBOL        EP5
+  C:186CH         SYMBOL        ER0
+  C:18B0H         SYMBOL        ER1
+  C:18BAH         SYMBOL        ER2
+  C:18C9H         SYMBOL        ER3
+  C:18F3H         SYMBOL        ER4
+  C:0848H         SYMBOL        ERL4
+  C:0CE4H         SYMBOL        ERPAR
+  C:04CEH         SYMBOL        ERRLK
+  X:0101H         SYMBOL        ERRLOC
+  X:0102H         SYMBOL        ERRNUM
+  C:1887H         SYMBOL        ERROR
+  C:1893H         SYMBOL        ERROR0
+  C:18A5H         SYMBOL        ERRS
+  C:1FF8H         SYMBOL        ERS
+  B:00A8H.1       SYMBOL        ET0
+  B:00A8H.2       SYMBOL        EX1
+  C:0377H         SYMBOL        EXA
+  C:037FH         SYMBOL        EXC
+  C:182EH         SYMBOL        EXI
+  C:17EAH         SYMBOL        EXP1
+  C:17E4H         SYMBOL        EXP11
+  C:0F44H         SYMBOL        EXPRB
+  C:0A94H         SYMBOL        E_FIND
+  B:00D0H.5       SYMBOL        F0
+  C:11EBH         SYMBOL        FCMP
+  C:0EEFH         SYMBOL        FINDC
+  C:0EEDH         SYMBOL        FINDCR
+  C:0AD4H         SYMBOL        FL1
+  C:0AEDH         SYMBOL        FL2
+  C:0ADDH         SYMBOL        FL3
+  C:0EF7H         SYMBOL        FNDCL2
+  N:0017H         SYMBOL        FORMAT
+  C:16E7H         SYMBOL        FPONE
+  N:0006H         SYMBOL        FPSIZ
+  X:0119H         SYMBOL        FPT1
+  X:011FH         SYMBOL        FPT2
+  C:102EH         SYMBOL        FPTS
+  C:101BH         SYMBOL        FPTST
+  N:1993H         SYMBOL        FP_BASE
+  C:13B9H         SYMBOL        FS
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 6
+
+
+  N:0011H         SYMBOL        FSIZE
+  C:13B4H         SYMBOL        FSTK
+  N:0001H         SYMBOL        FTYPE
+  C:1599H         SYMBOL        FUL1
+  C:1591H         SYMBOL        FULL
+  C:060FH         SYMBOL        F_VAR
+  C:0616H         SYMBOL        F_VAR0
+  C:062CH         SYMBOL        F_VAR1
+  C:0639H         SYMBOL        F_VAR2
+  C:0585H         SYMBOL        G1
+  C:0598H         SYMBOL        G2
+  C:059CH         SYMBOL        G3
+  C:059FH         SYMBOL        G4
+  C:05A2H         SYMBOL        G5
+  C:0ECEH         SYMBOL        GC
+  C:0ED6H         SYMBOL        GCI
+  C:0ED8H         SYMBOL        GCI1
+  C:0580H         SYMBOL        GETEND
+  C:0582H         SYMBOL        GETLIN
+  C:194CH         SYMBOL        GET_NUM
+  C:0AD2H         SYMBOL        GLN
+  X:0100H         SYMBOL        GTB
+  N:0018H         SYMBOL        GTRD
+  C:1530H         SYMBOL        GTX
+  N:0002H         SYMBOL        GTYPE
+  N:0037H         SYMBOL        HMODE
+  C:198AH         SYMBOL        H_RET
+  C:1224H         SYMBOL        I2
+  C:00F1H         SYMBOL        IAN
+  C:090CH         SYMBOL        IAT
+  X:0004H         SYMBOL        IBCNT
+  C:1934H         SYMBOL        IBLK
+  X:0005H         SYMBOL        IBLN
+  X:0007H         SYMBOL        IBUF
+  C:0690H         SYMBOL        ICLR
+  D:00A8H         SYMBOL        IE
+  C:120CH         SYMBOL        IFIX
+  C:0E91H         SYMBOL        IFIXL
+  C:0ECCH         SYMBOL        IGC
+  C:0817H         SYMBOL        ILOOP
+  C:154FH         SYMBOL        IMOV
+  C:0DFEH         SYMBOL        IN2
+  C:0E03H         SYMBOL        IN2A
+  C:0E10H         SYMBOL        IN3
+  C:0E21H         SYMBOL        IN3A
+  C:0E41H         SYMBOL        IN5
+  C:0E4AH         SYMBOL        IN6
+  N:001DH         SYMBOL        INBIT
+  C:155FH         SYMBOL        INC3210
+  C:07A0H         SYMBOL        INCH1
+  C:07A5H         SYMBOL        INCH1A
+  C:07ACH         SYMBOL        INCH1B
+  C:07B3H         SYMBOL        INCH1C
+  C:0787H         SYMBOL        INCHAR
+  C:1238H         SYMBOL        INC_ASTKA
+  C:06CCH         SYMBOL        INL0
+  C:06D3H         SYMBOL        INL1
+  C:06C9H         SYMBOL        INL2
+  C:06E2H         SYMBOL        INL2B
+  C:06F4H         SYMBOL        INL6
+  C:06CEH         SYMBOL        INLINE
+  C:06DEH         SYMBOL        INLX
+  N:0011H         SYMBOL        INPROG
+  N:0022H         SYMBOL        INP_B
+  C:0101H         SYMBOL        INS
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 7
+
+
+  C:1500H         SYMBOL        INSR
+  N:0012H         SYMBOL        INTBIT
+  N:0033H         SYMBOL        INTELB
+  C:0F31H         SYMBOL        INTERR
+  C:0939H         SYMBOL        INTERX
+  C:0F36H         SYMBOL        INTGER
+  X:0120H         SYMBOL        INTLOC
+  N:0016H         SYMBOL        INTPEN
+  N:0042H         SYMBOL        INTXAH
+  N:0043H         SYMBOL        INTXAL
+  D:00B8H         SYMBOL        IP
+  X:012AH         SYMBOL        IPROGS
+  C:17F0H         SYMBOL        IPTIME
+  N:00FFH         SYMBOL        IRAMTOP
+  N:002BH         SYMBOL        ISAV
+  C:0951H         SYMBOL        ISTA0
+  C:095DH         SYMBOL        ISTA1
+  C:08F9H         SYMBOL        ISTAT
+  C:091DH         SYMBOL        ISTAX
+  C:0922H         SYMBOL        ISTAX1
+  C:0926H         SYMBOL        ISTAY
+  C:09E8H         SYMBOL        IST_CAL
+  C:086EH         SYMBOL        ITRAP
+  C:0F41H         SYMBOL        ITRET
+  C:1853H         SYMBOL        I_DL
+  C:18FAH         SYMBOL        I_DR
+  C:084DH         SYMBOL        I_L
+  C:0E96H         SYMBOL        I_PI
+  C:1869H         SYMBOL        I_RET
+  C:0934H         SYMBOL        I_S
+  N:0026H         SYMBOL        I_T0
+  N:0028H         SYMBOL        JKBIT
+  C:0569H         SYMBOL        L20DPI
+  C:05B0H         SYMBOL        L31DPI
+  C:05DDH         SYMBOL        LCLR
+  C:05A6H         SYMBOL        LDPTRI
+  C:0FEAH         SYMBOL        LD_A
+  C:0578H         SYMBOL        LD_T
+  N:000AH         SYMBOL        LF
+  C:1545H         SYMBOL        LIN1
+  C:14D9H         SYMBOL        LINE
+  N:0015H         SYMBOL        LINEB
+  N:0049H         SYMBOL        LINLEN
+  C:1556H         SYMBOL        LMOV
+  C:169EH         SYMBOL        LNTAB
+  C:1304H         SYMBOL        LN_D
+  N:0097H         SYMBOL        LP
+  N:0019H         SYMBOL        LPB
+  C:0740H         SYMBOL        LTOUT1
+  C:1511H         SYMBOL        LTX
+  C:0EECH         SYMBOL        L_RET
+  X:010AH         SYMBOL        MEMTOP
+  N:0047H         SYMBOL        MILLIV
+  N:0045H         SYMBOL        MT1
+  N:0046H         SYMBOL        MT2
+  X:0108H         SYMBOL        MT_ALL
+  C:1354H         SYMBOL        MU1
+  C:0BC7H         SYMBOL        N4
+  C:0770H         SYMBOL        NLC
+  C:1586H         SYMBOL        NMOV
+  C:0564H         SYMBOL        NOGO
+  C:0F22H         SYMBOL        NOPASS
+  C:1FC9H         SYMBOL        NOROM
+  N:0030H         SYMBOL        NO_C
+  C:114AH         SYMBOL        NTWO
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 8
+
+
+  N:0000H         SYMBOL        NULL
+  N:0015H         SYMBOL        NULLCT
+  C:0C1AH         SYMBOL        NUMC
+  C:0C23H         SYMBOL        NUMC1
+  C:0E8FH         SYMBOL        ONE
+  N:0013H         SYMBOL        ON_ERR
+  C:0D3BH         SYMBOL        OOPS
+  C:00CDH         SYMBOL        OPBOL
+  C:0057H         SYMBOL        OPTAB
+  N:0014H         SYMBOL        OTI
+  N:0010H         SYMBOL        OTS
+  C:192DH         SYMBOL        OTST
+  D:0090H         SYMBOL        P1
+  D:00A0H         SYMBOL        P2
+  D:00B0H         SYMBOL        P3
+  C:0E98H         SYMBOL        PAREN_INT
+  C:1422H         SYMBOL        PCL
+  C:0497H         SYMBOL        PG1
+  C:049CH         SYMBOL        PG1_3
+  C:04A1H         SYMBOL        PG2
+  C:04A4H         SYMBOL        PG2_1
+  C:04A9H         SYMBOL        PG3
+  C:04B5H         SYMBOL        PG4
+  C:04BCH         SYMBOL        PG5
+  C:04C5H         SYMBOL        PG6
+  C:04D1H         SYMBOL        PG7
+  C:0445H         SYMBOL        PG8
+  C:04DCH         SYMBOL        PG9
+  C:0495H         SYMBOL        PGR
+  C:04E2H         SYMBOL        PGU
+  N:0016H         SYMBOL        PHEAD
+  C:17F6H         SYMBOL        PIE
+  C:1468H         SYMBOL        PIPI
+  C:1419H         SYMBOL        PLNEXP
+  C:1638H         SYMBOL        PMTOP
+  C:06B9H         SYMBOL        PN0
+  C:06AFH         SYMBOL        PN1
+  C:118CH         SYMBOL        POLY1
+  C:1184H         SYMBOL        POLYC
+  C:0FD4H         SYMBOL        POPAS
+  C:1431H         SYMBOL        POP_T1
+  C:117BH         SYMBOL        POTWO
+  C:15A3H         SYMBOL        PP
+  C:15B6H         SYMBOL        PPL
+  C:15BBH         SYMBOL        PPL1
+  C:15C0H         SYMBOL        PPL2
+  C:15D9H         SYMBOL        PPL3
+  C:15DEH         SYMBOL        PPL4
+  C:160BH         SYMBOL        PPL6
+  C:1618H         SYMBOL        PPL7
+  C:162CH         SYMBOL        PPL9
+  C:15F2H         SYMBOL        PPLX
+  C:15FFH         SYMBOL        PPLY
+  C:15CEH         SYMBOL        PPX
+  C:06B7H         SYMBOL        PRNTCR
+  X:0128H         SYMBOL        PROGS
+  N:0200H         SYMBOL        PSTART
+  D:00D0H         SYMBOL        PSW
+  C:06FFH         SYMBOL        PTIME
+  C:0FDEH         SYMBOL        PUSHAS
+  C:141CH         SYMBOL        PUSHC
+  C:0BB2H         SYMBOL        PUSHCS
+  C:142CH         SYMBOL        PUSH_ONE
+  C:1438H         SYMBOL        PUSH_T1
+  C:0CE0H         SYMBOL        P_E
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 9
+
+
+  C:143FH         SYMBOL        P_T2
+  C:135EH         SYMBOL        P_Z
+  N:0000H         SYMBOL        R0B0
+  N:0001H         SYMBOL        R1B0
+  N:0002H         SYMBOL        R2B0
+  N:0003H         SYMBOL        R3B0
+  C:09D6H         SYMBOL        R3CK
+  N:0004H         SYMBOL        R4B0
+  N:0005H         SYMBOL        R5B0
+  N:0006H         SYMBOL        R6B0
+  C:0DF0H         SYMBOL        R76S
+  N:0007H         SYMBOL        R7B0
+  C:0665H         SYMBOL        RC1
+  C:0669H         SYMBOL        RC2
+  X:010CH         SYMBOL        RCELL
+  C:0889H         SYMBOL        RCL
+  C:065AH         SYMBOL        RCLEAR
+  C:00FBH         SYMBOL        RDYS
+  C:1265H         SYMBOL        RECIP
+  N:0025H         SYMBOL        RETBIT
+  C:0554H         SYMBOL        RF1
+  C:055BH         SYMBOL        RF2
+  C:0561H         SYMBOL        RF3
+  C:055AH         SYMBOL        RFX
+  B:0098H.0       SYMBOL        RI
+  C:0AF5H         SYMBOL        RL1
+  C:0AF3H         SYMBOL        RLINE
+  C:156AH         SYMBOL        RMOV
+  C:053BH         SYMBOL        RO1
+  N:8000H         SYMBOL        ROMADR
+  C:0551H         SYMBOL        ROMFD
+  C:06A5H         SYMBOL        ROM_P
+  C:07BCH         SYMBOL        RROM
+  B:00D0H.3       SYMBOL        RS0
+  C:0AC8H         SYMBOL        RTST
+  N:0012H         SYMBOL        RTXAH
+  N:0010H         SYMBOL        RTXAL
+  C:119EH         SYMBOL        RV
+  B:00B0H.0       SYMBOL        RXD
+  C:0D3EH         SYMBOL        S13
+  C:140DH         SYMBOL        S20DP
+  C:05FBH         SYMBOL        S31DP
+  C:05F9H         SYMBOL        S31DP2
+  C:1703H         SYMBOL        S31L
+  C:0D1CH         SYMBOL        SA
+  N:004AH         SYMBOL        SAVE_T
+  C:16EEH         SYMBOL        SBAUD
+  D:0099H         SYMBOL        SBUF
+  C:0E64H         SYMBOL        SCALL
+  C:1910H         SYMBOL        SCLOCK
+  C:0685H         SYMBOL        SCLR
+  D:0098H         SYMBOL        SCON
+  C:1922H         SYMBOL        SC_R
+  C:0D5DH         SYMBOL        SD0
+  C:0DBDH         SYMBOL        SDI
+  C:0D62H         SYMBOL        SDIMX
+  C:0CBFH         SYMBOL        SE0
+  C:18ABH         SYMBOL        SERR1
+  C:123CH         SYMBOL        SETREG
+  C:0A54H         SYMBOL        SF2
+  C:0A73H         SYMBOL        SF3
+  C:0A3DH         SYMBOL        SFOR
+  C:0B2EH         SYMBOL        SGOSUB
+  C:0AABH         SYMBOL        SGOTO
+  C:0B30H         SYMBOL        SGS0
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 10
+
+
+  C:0B36H         SYMBOL        SGS1
+  C:0AADH         SYMBOL        SGT1
+  C:0ABAH         SYMBOL        SGT2
+  C:0A87H         SYMBOL        SIF
+  C:11E5H         SYMBOL        SIN0
+  C:0DF6H         SYMBOL        SINPUT
+  C:16C3H         SYMBOL        SINTAB
+  C:096FH         SYMBOL        SLET
+  C:09C3H         SYMBOL        SLET0
+  C:09C7H         SYMBOL        SLET1
+  C:09C9H         SYMBOL        SLET2
+  C:0C60H         SYMBOL        SM
+  C:0B60H         SYMBOL        SNEXT
+  C:13F8H         SYMBOL        SONERR
+  C:1402H         SYMBOL        SONEXT
+  C:0E57H         SYMBOL        SOT
+  D:0081H         SYMBOL        SP
+  C:0C3DH         SYMBOL        SP0
+  C:0C44H         SYMBOL        SP1
+  C:0C40H         SYMBOL        SP2
+  C:0C48H         SYMBOL        SP4
+  C:0C53H         SYMBOL        SP6
+  C:0C58H         SYMBOL        SP7
+  C:0C76H         SYMBOL        SP8
+  C:0CD8H         SYMBOL        SP9
+  C:0CDFH         SYMBOL        SP9A
+  C:09DAH         SYMBOL        SPEOP
+  C:0C2AH         SYMBOL        SPH0
+  C:0C2CH         SYMBOL        SPH1
+  N:001FH         SYMBOL        SPINT
+  C:0A7EH         SYMBOL        SPOP
+  C:0C2EH         SYMBOL        SPRINT
+  N:003EH         SYMBOL        SPSAV
+  C:0A77H         SYMBOL        SPUSH
+  X:0124H         SYMBOL        SPV
+  N:004BH         SYMBOL        SP_H
+  N:004CH         SYMBOL        SP_L
+  C:0C7DH         SYMBOL        SQ
+  C:128CH         SYMBOL        SQR1
+  C:1293H         SYMBOL        SQR2
+  C:1296H         SYMBOL        SQR4
+  C:1273H         SYMBOL        SQ_ERR
+  C:0B15H         SYMBOL        SR0
+  C:0BEAH         SYMBOL        SRD
+  C:0BE6H         SYMBOL        SRD0
+  C:0BF3H         SYMBOL        SRD1
+  C:0BF5H         SYMBOL        SRD2
+  C:0C00H         SYMBOL        SRD4
+  C:0C07H         SYMBOL        SRD5
+  C:0C12H         SYMBOL        SRD6
+  C:0BE4H         SYMBOL        SREAD
+  C:0BCFH         SYMBOL        SRESTR
+  C:0B0FH         SYMBOL        SRETI
+  C:0B11H         SYMBOL        SRETRN
+  C:1202H         SYMBOL        SRT
+  C:0D13H         SYMBOL        SS
+  C:099EH         SYMBOL        SSOOP
+  C:085CH         SYMBOL        SSTOP
+  C:0864H         SYMBOL        SSTOP0
+  N:00FEH         SYMBOL        STACKTP
+  C:0121H         SYMBOL        STATD
+  C:0705H         SYMBOL        STEROT
+  N:0009H         SYMBOL        STESIZ
+  C:0020H         SYMBOL        STJ
+  C:0041H         SYMBOL        STK
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 11
+
+
+  C:167BH         SYMBOL        STONE
+  C:1680H         SYMBOL        STONE1
+  N:0020H         SYMBOL        STOPBIT
+  C:00ECH         SYMBOL        STP
+  C:0033H         SYMBOL        STQ
+  C:0602H         SYMBOL        STRING
+  C:11C3H         SYMBOL        STRIP
+  X:0122H         SYMBOL        STR_AL
+  C:003EH         SYMBOL        STS
+  C:0044H         SYMBOL        STU
+  C:0FE6H         SYMBOL        ST_A
+  X:0106H         SYMBOL        ST_ALL
+  C:1923H         SYMBOL        SUI
+  C:0B02H         SYMBOL        SUNTIL
+  C:1928H         SYMBOL        SUO
+  C:1443H         SYMBOL        SWAP_ASTKA
+  C:0AFDH         SYMBOL        SWHILE
+  C:0C82H         SYMBOL        SX
+  C:0983H         SYMBOL        S_0
+  C:09B3H         SYMBOL        S_1
+  C:0992H         SYMBOL        S_3
+  C:09A0H         SYMBOL        S_4
+  C:09AEH         SYMBOL        S_5
+  C:0EC0H         SYMBOL        S_C
+  C:0E73H         SYMBOL        S_C_1
+  C:0F06H         SYMBOL        S_DO
+  C:098DH         SYMBOL        S_E
+  C:144AH         SYMBOL        S_L
+  N:003FH         SYMBOL        S_LEN
+  C:1FD3H         SYMBOL        S_N
+  C:0CECH         SYMBOL        S_ON
+  C:0B04H         SYMBOL        S_WU
+  C:159EH         SYMBOL        TB
+  C:1582H         SYMBOL        TBR
+  C:157FH         SYMBOL        TBYTE
+  D:0088H         SYMBOL        TCON
+  N:000BH         SYMBOL        TEMP1
+  N:000CH         SYMBOL        TEMP2
+  N:000DH         SYMBOL        TEMP3
+  N:000EH         SYMBOL        TEMP4
+  N:000FH         SYMBOL        TEMP5
+  C:184CH         SYMBOL        TEMPD
+  C:1305H         SYMBOL        TEMP_COMP
+  C:0707H         SYMBOL        TEROT
+  C:075CH         SYMBOL        TEROT1
+  C:0769H         SYMBOL        TEROT2
+  B:0088H.7       SYMBOL        TF1
+  D:008CH         SYMBOL        TH0
+  D:008DH         SYMBOL        TH1
+  C:0E79H         SYMBOL        THREE
+  B:0098H.1       SYMBOL        TI
+  C:0525H         SYMBOL        TIMER_LOAD
+  X:0126H         SYMBOL        TIV
+  D:008AH         SYMBOL        TL0
+  D:008BH         SYMBOL        TL1
+  D:0089H         SYMBOL        TMOD
+  N:00C8H         SYMBOL        TMR0
+  N:00C9H         SYMBOL        TMR1
+  N:00CAH         SYMBOL        TMR2
+  X:012CH         SYMBOL        TM_TOP
+  C:0173H         SYMBOL        TOKTAB
+  C:190BH         SYMBOL        TR
+  B:0088H.4       SYMBOL        TR0
+  B:0088H.6       SYMBOL        TR1
+  N:00CEH         SYMBOL        TRC2
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 12
+
+
+  N:00CBH         SYMBOL        TT2C
+  N:00CCH         SYMBOL        TTC
+  C:1150H         SYMBOL        TTIME
+  N:00CDH         SYMBOL        TTM
+  N:0048H         SYMBOL        TVH
+  N:0049H         SYMBOL        TVL
+  C:0E86H         SYMBOL        TWO
+  C:148AH         SYMBOL        TWOL
+  C:149CH         SYMBOL        TWO_EX
+  C:149DH         SYMBOL        TWO_EY
+  C:149AH         SYMBOL        TWO_R2
+  N:000AH         SYMBOL        TXAH
+  N:0008H         SYMBOL        TXAL
+  C:0755H         SYMBOL        TXX
+  C:0730H         SYMBOL        T_1
+  N:00E3H         SYMBOL        T_ADD
+  N:00D1H         SYMBOL        T_ASC
+  N:0092H         SYMBOL        T_BIT
+  C:1761H         SYMBOL        T_BUF
+  N:00D3H         SYMBOL        T_CHR
+  N:00F0H         SYMBOL        T_CMND
+  C:07E7H         SYMBOL        T_CMP
+  N:00AAH         SYMBOL        T_CR
+  N:009CH         SYMBOL        T_DATA
+  N:0090H         SYMBOL        T_DIR
+  C:0EB9H         SYMBOL        T_DP
+  N:00A8H         SYMBOL        T_ELSE
+  N:00EAH         SYMBOL        T_EQU
+  C:0A9FH         SYMBOL        T_F1
+  N:009FH         SYMBOL        T_GOSB
+  N:0083H         SYMBOL        T_GOTO
+  N:0040H         SYMBOL        T_HH
+  N:00C6H         SYMBOL        T_IE
+  N:00C7H         SYMBOL        T_IP
+  C:1990H         SYMBOL        T_L
+  N:00A4H         SYMBOL        T_LAST
+  N:0041H         SYMBOL        T_LL
+  N:00E0H         SYMBOL        T_LPAR
+  N:00C4H         SYMBOL        T_MTOP
+  N:00E9H         SYMBOL        T_NEG
+  N:00CFH         SYMBOL        T_P1
+  N:00D0H         SYMBOL        T_PC
+  N:0096H         SYMBOL        T_REM
+  N:00A9H         SYMBOL        T_SPC
+  N:00A7H         SYMBOL        T_STEP
+  N:0090H         SYMBOL        T_STOP
+  N:00E5H         SYMBOL        T_SUB
+  C:08B4H         SYMBOL        T_T
+  C:08D2H         SYMBOL        T_T1
+  C:08E0H         SYMBOL        T_T2
+  N:00A4H         SYMBOL        T_TAB
+  N:00A5H         SYMBOL        T_THEN
+  N:00C5H         SYMBOL        T_TIME
+  N:00A6H         SYMBOL        T_TO
+  C:08E6H         SYMBOL        T_TRAP
+  N:00BEH         SYMBOL        T_ULAST
+  N:00B0H         SYMBOL        T_UOP
+  N:00D2H         SYMBOL        T_USE
+  N:00C3H         SYMBOL        T_XTAL
+  C:0B3AH         SYMBOL        T_X_S
+  C:0C9CH         SYMBOL        U3
+  C:0CA0H         SYMBOL        U4
+  C:0CAAH         SYMBOL        U5
+  C:0CC1H         SYMBOL        U5A
+  C:0CCEH         SYMBOL        U6
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 13
+
+
+  C:0CD0H         SYMBOL        U7
+  C:0CCAH         SYMBOL        U8
+  C:0CC5H         SYMBOL        U8A
+  C:0CC7H         SYMBOL        U8B
+  N:002AH         SYMBOL        UBIT
+  C:14FCH         SYMBOL        UE
+  C:00DEH         SYMBOL        UOPBOL
+  N:0027H         SYMBOL        UPB
+  C:1097H         SYMBOL        UPP0
+  C:10C6H         SYMBOL        UPP1
+  C:10C2H         SYMBOL        UPP1A
+  C:10D5H         SYMBOL        UPP2
+  C:10EAH         SYMBOL        UPP3
+  C:10F6H         SYMBOL        UPP4
+  C:110AH         SYMBOL        UPP7
+  C:1108H         SYMBOL        UPP7A
+  C:110CH         SYMBOL        UPP8
+  C:10B6H         SYMBOL        UPP9
+  C:1086H         SYMBOL        UPPL
+  C:06B5H         SYMBOL        UPRNT
+  C:10E0H         SYMBOL        UP_2
+  C:10E3H         SYMBOL        UP_3
+  C:0047H         SYMBOL        USENT
+  C:1858H         SYMBOL        U_ID1
+  N:0021H         SYMBOL        U_IDL
+  C:0DB5H         SYMBOL        V4
+  C:0D66H         SYMBOL        VAR
+  C:0D68H         SYMBOL        VAR1
+  C:0D9BH         SYMBOL        VAR2
+  C:0A0EH         SYMBOL        VARB
+  C:145BH         SYMBOL        VARCOP
+  C:0A11H         SYMBOL        VARD
+  X:0104H         SYMBOL        VARTOP
+  C:0F02H         SYMBOL        VAR_ER
+  C:0D81H         SYMBOL        VX
+  C:0D75H         SYMBOL        VY
+  C:145DH         SYMBOL        V_C
+  C:1960H         SYMBOL        WB
+  C:0EFDH         SYMBOL        WCR
+  C:0F42H         SYMBOL        WE
+  C:0DAEH         SYMBOL        X3120
+  C:056FH         SYMBOL        X31DP
+  C:0FB9H         SYMBOL        XBILT
+  N:002DH         SYMBOL        XBIT
+  C:0FC5H         SYMBOL        XLPAR
+  C:0F87H         SYMBOL        XOP
+  C:0F91H         SYMBOL        XOP1
+  C:0FB0H         SYMBOL        XOP2
+  C:0FCBH         SYMBOL        XOP3
+  C:0FD2H         SYMBOL        XPOP
+  C:17DEH         SYMBOL        XTALV
+  C:0B68H         SYMBOL        XXI
+  C:0BD7H         SYMBOL        X_TR
+  C:04F9H         SYMBOL        ZRO
+  N:0036H         SYMBOL        ZSURP
+  -------         ENDMOD        BAS52
+
+  -------         MODULE        BAS52FP
+  D:00E0H         SYMBOL        ACC
+  C:1A19H         SYMBOL        ADDLP
+  N:0023H         SYMBOL        ADD_IN
+  C:1A17H         SYMBOL        ADD_R
+  C:1A7DH         SYMBOL        ARG1_EXP_IS_LARGER
+  N:0009H         SYMBOL        ARG_STACK
+  N:0001H         SYMBOL        ARG_STACK_PAGE
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 14
+
+
+  D:00F0H         SYMBOL        B
+  C:1A85H         SYMBOL        BOTH_PLUS
+  C:1EABH         SYMBOL        CASB
+  C:1EBAH         SYMBOL        CASB2
+  C:1ECDH         SYMBOL        CASB4
+  C:1ECFH         SYMBOL        CASB5
+  C:1ED8H         SYMBOL        CASB6
+  C:1A8DH         SYMBOL        CLOOP
+  C:1EABH         SYMBOL        CONVERT_ASCII_STRING_TO_BINARY
+  C:1F04H         SYMBOL        CONVERT_BINARY_TO_ASCII_STRING
+  N:0058H         SYMBOL        CONVT
+  B:00D0H.7       SYMBOL        CY
+  C:1FF3H         SYMBOL        DC1
+  C:1D4FH         SYMBOL        DECX
+  N:0004H         SYMBOL        DIGIT
+  C:1FEDH         SYMBOL        DIGIT_CHECK
+  C:1ADCH         SYMBOL        DIV0
+  C:1AE9H         SYMBOL        DIV3
+  C:1AF6H         SYMBOL        DIV4
+  C:1AF9H         SYMBOL        DIV5
+  C:1B01H         SYMBOL        DIV6
+  C:1B18H         SYMBOL        DIV7
+  C:1B2DH         SYMBOL        DIV8
+  N:0053H         SYMBOL        DONE_LOAD
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  C:1AE7H         SYMBOL        D_UNDER
+  C:1A82H         SYMBOL        EXPONENTS_EQUAL
+  C:1E23H         SYMBOL        EXPOT4
+  C:1E4EH         SYMBOL        EXPOT5
+  C:1E21H         SYMBOL        EXPOTX
+  C:1E0EH         SYMBOL        EXPOUT
+  B:00D0H.5       SYMBOL        F0
+  C:1F3DH         SYMBOL        FAST_DONE
+  C:1D60H         SYMBOL        FDT1
+  C:1D68H         SYMBOL        FDT2
+  C:1D5CH         SYMBOL        FDTEST
+  C:1D21H         SYMBOL        FINISH1
+  C:1D34H         SYMBOL        FINISH2
+  C:1D35H         SYMBOL        FINISH_UP
+  N:0052H         SYMBOL        FIRST_RADIX
+  C:19B7H         SYMBOL        FLOATING_ADD
+  C:1A6AH         SYMBOL        FLOATING_COMP
+  C:1ACFH         SYMBOL        FLOATING_DIV
+  C:1A9AH         SYMBOL        FLOATING_MUL
+  C:1CCFH         SYMBOL        FLOATING_POINT_INPUT
+  C:1D87H         SYMBOL        FLOATING_POINT_OUTPUT
+  C:19ADH         SYMBOL        FLOATING_SUB
+  C:1AA1H         SYMBOL        FMUL1
+  C:1AB3H         SYMBOL        FMUL2
+  C:1ABCH         SYMBOL        FMUL3
+  C:1AAFH         SYMBOL        FMUL_OVER
+  N:0017H         SYMBOL        FORMAT
+  N:0051H         SYMBOL        FOUND_RADIX
+  C:1AB1H         SYMBOL        FOV
+  C:1BC2H         SYMBOL        FPC1
+  N:0035H         SYMBOL        FP_ACC1
+  N:0036H         SYMBOL        FP_ACC2
+  N:0037H         SYMBOL        FP_ACC3
+  N:0038H         SYMBOL        FP_ACC4
+  N:0039H         SYMBOL        FP_ACC5
+  N:003AH         SYMBOL        FP_ACC6
+  N:003BH         SYMBOL        FP_ACC7
+  N:003CH         SYMBOL        FP_ACC8
+  N:0034H         SYMBOL        FP_ACCC
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 15
+
+
+  N:003DH         SYMBOL        FP_ACCS
+  N:0033H         SYMBOL        FP_ACCX
+  N:002AH         SYMBOL        FP_CARRY
+  C:1BBFH         SYMBOL        FP_CLEAR
+  N:002BH         SYMBOL        FP_DIG12
+  N:002CH         SYMBOL        FP_DIG34
+  N:002DH         SYMBOL        FP_DIG56
+  N:002EH         SYMBOL        FP_DIG78
+  N:0030H         SYMBOL        FP_EXP
+  N:002BH         SYMBOL        FP_NIB1
+  N:002CH         SYMBOL        FP_NIB2
+  N:002DH         SYMBOL        FP_NIB3
+  N:002EH         SYMBOL        FP_NIB4
+  N:002FH         SYMBOL        FP_NIB5
+  N:0030H         SYMBOL        FP_NIB6
+  N:0031H         SYMBOL        FP_NIB7
+  N:0032H         SYMBOL        FP_NIB8
+  N:0006H         SYMBOL        FP_NUMBER_SIZE
+  N:002FH         SYMBOL        FP_SIGN
+  N:0028H         SYMBOL        FP_STATUS
+  N:0029H         SYMBOL        FP_TEMP
+  C:1DDFH         SYMBOL        FREE
+  C:1DE6H         SYMBOL        FREE1
+  C:1E02H         SYMBOL        FREE2
+  C:1DFAH         SYMBOL        FREE4
+  C:1D59H         SYMBOL        FRTEST
+  C:1A68H         SYMBOL        FSUB10
+  C:1A37H         SYMBOL        FSUB5
+  C:1A42H         SYMBOL        FSUB6
+  C:1A46H         SYMBOL        FSUB7
+  C:1A51H         SYMBOL        FSUB8
+  C:1A57H         SYMBOL        FSUB9
+  C:1FEBH         SYMBOL        GET_DIGIT_CHECK
+  C:1D6CH         SYMBOL        GET_DPTR_CHARACTER
+  C:1CF7H         SYMBOL        GT1
+  C:1D0FH         SYMBOL        GT2
+  C:1CE8H         SYMBOL        GTEST
+  C:1CBEH         SYMBOL        HC1
+  C:1F58H         SYMBOL        HEX2X
+  C:1CAEH         SYMBOL        HEXDO1
+  C:1CADH         SYMBOL        HEXDON
+  C:1F4CH         SYMBOL        HEXOUT
+  C:1C9CH         SYMBOL        HEXSC1
+  C:1C96H         SYMBOL        HEXSCAN
+  C:1CB6H         SYMBOL        HEX_CHECK
+  C:1F64H         SYMBOL        HOUT1
+  C:1F6FH         SYMBOL        HOUTHI
+  C:1F70H         SYMBOL        HOUTLO
+  C:1CB3H         SYMBOL        HS1
+  C:1D6BH         SYMBOL        INC_AND_GET_DPTR_CHARACTER
+  C:1B7FH         SYMBOL        INC_FP_EXP
+  C:1D51H         SYMBOL        INERR
+  C:1CDDH         SYMBOL        INLOOP
+  C:1CE5H         SYMBOL        INLPIK
+  N:0019H         SYMBOL        INTGRC
+  C:1C00H         SYMBOL        LEFT
+  C:1C02H         SYMBOL        LEFT1
+  C:1C0AH         SYMBOL        LEFT3
+  C:1C29H         SYMBOL        LEFT5
+  C:1C15H         SYMBOL        LEFTL
+  C:19D1H         SYMBOL        LOAD1
+  C:19E1H         SYMBOL        LOAD2
+  C:1BA0H         SYMBOL        LOAD7
+  C:1C8CH         SYMBOL        LOADR1
+  C:1C88H         SYMBOL        LOADR1_MANTISSA
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 16
+
+
+  C:1C6BH         SYMBOL        LOAD_POINTERS
+  C:1C77H         SYMBOL        MDES1
+  C:1C4BH         SYMBOL        MNL0
+  C:1C5DH         SYMBOL        MNL1
+  C:1C42H         SYMBOL        MNLOOP
+  C:1E9BH         SYMBOL        MOUT
+  N:0078H         SYMBOL        MSIGN
+  C:1EFCH         SYMBOL        MUL11
+  C:1EE3H         SYMBOL        MULNUM
+  C:1EE0H         SYMBOL        MULNUM10
+  C:1F03H         SYMBOL        MULX
+  C:1C75H         SYMBOL        MUL_DIV_EXP_AND_SIGN
+  C:1C38H         SYMBOL        MUL_NIBBLE
+  C:1E7BH         SYMBOL        NL1
+  C:1E84H         SYMBOL        NR1
+  C:1E74H         SYMBOL        NUM_LT
+  C:1E7DH         SYMBOL        NUM_RT
+  N:1990H         SYMBOL        OUTPUT
+  C:1E69H         SYMBOL        OUTR
+  C:1E58H         SYMBOL        OUTR0
+  B:00D0H.2       SYMBOL        OV
+  C:1BA5H         SYMBOL        OVE1
+  N:0001H         SYMBOL        OVERFLOW
+  C:1BA1H         SYMBOL        OVERFLOW_AND_EXIT
+  D:00A0H         SYMBOL        P2
+  C:1B30H         SYMBOL        PACK
+  C:1B39H         SYMBOL        PACK0
+  C:1B3AH         SYMBOL        PACK1
+  C:1B44H         SYMBOL        PACK2
+  C:1B56H         SYMBOL        PACK3
+  C:1B5CH         SYMBOL        PACK4
+  C:1B5EH         SYMBOL        PLOOP
+  C:1D72H         SYMBOL        PLUS_MINUS_TEST
+  C:1D86H         SYMBOL        PMT1
+  C:1D84H         SYMBOL        PMT2
+  C:1D85H         SYMBOL        PMT3
+  C:19C9H         SYMBOL        POP_AND_EXIT
+  C:1D31H         SYMBOL        POSNM1
+  C:1D2EH         SYMBOL        POSNUM
+  C:1B7EH         SYMBOL        PRET
+  C:1CC3H         SYMBOL        PUSHR2R0
+  N:0000H         SYMBOL        R0B0
+  N:0001H         SYMBOL        R1B0
+  C:1EDCH         SYMBOL        RCASB
+  C:1D53H         SYMBOL        RET_X
+  C:1BC8H         SYMBOL        RIGHT
+  C:1BCAH         SYMBOL        RIGHT1
+  C:1BD2H         SYMBOL        RIGHT3
+  C:1BF1H         SYMBOL        RIGHT5
+  C:1BDEH         SYMBOL        RIGHTL
+  C:1E9FH         SYMBOL        ROUT
+  C:1F21H         SYMBOL        RSUB
+  C:1F23H         SYMBOL        RSUB1
+  C:1F40H         SYMBOL        RSUB2
+  C:1F4BH         SYMBOL        RSUB3
+  C:1F43H         SYMBOL        RSUB4
+  C:1F20H         SYMBOL        RSUB_R
+  C:19C3H         SYMBOL        SE1
+  C:1A7AH         SYMBOL        SIGNS_DIFFERENT
+  C:1E98H         SYMBOL        SINOUT
+  C:1EA7H         SYMBOL        SOUT
+  C:1EA9H         SYMBOL        SOUT1
+  C:1F62H         SYMBOL        SOUT_1
+  C:1E85H         SYMBOL        SPACE7
+  C:1E96H         SYMBOL        SS7
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 17
+
+
+  C:1D45H         SYMBOL        STDIG
+  C:1D54H         SYMBOL        STDIG1
+  C:1B76H         SYMBOL        STORE2
+  C:1B70H         SYMBOL        STORE_ALIGN_TEST_AND_EXIT
+  C:1A22H         SYMBOL        SUBLP
+  C:19BFH         SYMBOL        SWAP_AND_EXIT
+  C:1B8FH         SYMBOL        ULOOP
+  N:0000H         SYMBOL        UNDERFLOW
+  C:1BB2H         SYMBOL        UNDERFLOW_AND_EXIT
+  C:1B8BH         SYMBOL        UNPACK_R0
+  C:1DBDH         SYMBOL        USING0
+  C:1DC3H         SYMBOL        USING1
+  C:1DD5H         SYMBOL        USING2
+  C:1DD3H         SYMBOL        USINGX
+  C:1DD0H         SYMBOL        USINGY
+  C:1E57H         SYMBOL        U_RET
+  C:1E30H         SYMBOL        XOUT0
+  C:1E35H         SYMBOL        XOUT2
+  C:1E3DH         SYMBOL        XOUT3
+  C:1E41H         SYMBOL        XOUT4
+  N:0050H         SYMBOL        XSIGN
+  C:1E8DH         SYMBOL        Z7R7
+  N:0002H         SYMBOL        ZERO
+  C:1E8EH         SYMBOL        ZERO7
+  C:1BB8H         SYMBOL        ZERO_AND_EXIT
+  N:0003H         SYMBOL        ZERO_DIVIDE
+  C:1EA3H         SYMBOL        ZOUT
+  N:0036H         SYMBOL        ZSURP
+  C:1E6CH         SYMBOL        ZT0
+  C:1E73H         SYMBOL        ZT1
+  C:1E6AH         SYMBOL        ZTEST
+  -------         ENDMOD        BAS52FP
+
+  -------         MODULE        BASPLUS
+  D:00E0H         SYMBOL        ACC
+  C:283EH         SYMBOL        ASCII2
+  C:2831H         SYMBOL        ASCII_OUT
+  C:0030H         SYMBOL        BASIC
+  N:0000H         SYMBOL        BASPLUS
+  D:001EH         SYMBOL        BYTE_COUNT
+  D:001DH         SYMBOL        CHECKSUM
+  C:26B5H         SYMBOL        CHNGI1
+  C:2708H         SYMBOL        CHNGI2
+  C:270DH         SYMBOL        CHNGI3
+  C:2724H         SYMBOL        CHNGI6
+  C:26C6H         SYMBOL        CHNGI7
+  C:26DFH         SYMBOL        CHNGI8
+  C:2726H         SYMBOL        CHNGI9
+  C:272DH         SYMBOL        CHNGI_ERR
+  C:2624H         SYMBOL        CHNGX1
+  C:2678H         SYMBOL        CHNGX2
+  C:267DH         SYMBOL        CHNGX3
+  C:2698H         SYMBOL        CHNGX6
+  C:2632H         SYMBOL        CHNGX7
+  C:264BH         SYMBOL        CHNGX8
+  C:26A5H         SYMBOL        CHNGX9
+  C:26ACH         SYMBOL        CHNGX_ERR
+  C:2860H         SYMBOL        CKSUM_ERROR
+  C:2197H         SYMBOL        CKSUM_MSG
+  C:2844H         SYMBOL        CMD_ERROR
+  C:214FH         SYMBOL        CMD_MSG
+  C:2594H         SYMBOL        DISPC1
+  C:2614H         SYMBOL        DISPC10
+  C:25A1H         SYMBOL        DISPC2
+  C:25BBH         SYMBOL        DISPC3
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 18
+
+
+  C:25CBH         SYMBOL        DISPC4
+  C:25CEH         SYMBOL        DISPC7
+  C:25E7H         SYMBOL        DISPC8
+  C:261BH         SYMBOL        DISPC_ERR
+  C:250BH         SYMBOL        DISPI1
+  C:2584H         SYMBOL        DISPI10
+  C:2518H         SYMBOL        DISPI2
+  C:2538H         SYMBOL        DISPI3
+  C:2548H         SYMBOL        DISPI4
+  C:254BH         SYMBOL        DISPI7
+  C:2564H         SYMBOL        DISPI8
+  C:258BH         SYMBOL        DISPI_ERR
+  C:247CH         SYMBOL        DISPX1
+  C:24FBH         SYMBOL        DISPX10
+  C:2489H         SYMBOL        DISPX2
+  C:24A3H         SYMBOL        DISPX3
+  C:24B3H         SYMBOL        DISPX4
+  C:24B6H         SYMBOL        DISPX7
+  C:24CFH         SYMBOL        DISPX8
+  C:2502H         SYMBOL        DISPX_ERR
+  C:2729H         SYMBOL        DONE_CHNGI
+  C:26A8H         SYMBOL        DONE_CHNGX
+  C:2617H         SYMBOL        DONE_DISPC
+  C:2587H         SYMBOL        DONE_DISPI
+  C:24FEH         SYMBOL        DONE_DISPX
+  C:280BH         SYMBOL        DONE_FILLI
+  C:279DH         SYMBOL        DONE_FILLX
+  C:236CH         SYMBOL        DONE_SAVEC
+  C:2462H         SYMBOL        DONE_SAVEX
+  C:26AFH         SYMBOL        DO_CHNGI
+  C:261EH         SYMBOL        DO_CHNGX
+  C:258EH         SYMBOL        DO_DISPC
+  C:2505H         SYMBOL        DO_DISPI
+  C:2476H         SYMBOL        DO_DISPX
+  C:27A4H         SYMBOL        DO_FILLI
+  C:2730H         SYMBOL        DO_FILLX
+  C:21ECH         SYMBOL        DO_LOAD
+  C:228CH         SYMBOL        DO_SAVEC
+  C:2383H         SYMBOL        DO_SAVEX
+  C:2812H         SYMBOL        DO_VER
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  C:2850H         SYMBOL        ERROR_HANDLE
+  C:27AAH         SYMBOL        FILLI1
+  C:2808H         SYMBOL        FILLI10
+  C:27EBH         SYMBOL        FILLI3
+  C:27FBH         SYMBOL        FILLI4
+  C:280FH         SYMBOL        FILLI_ERR
+  C:2736H         SYMBOL        FILLX1
+  C:279AH         SYMBOL        FILLX10
+  C:2771H         SYMBOL        FILLX3
+  C:2781H         SYMBOL        FILLX4
+  C:27A1H         SYMBOL        FILLX_ERR
+  D:0019H         SYMBOL        HBEG_ADDR
+  D:001BH         SYMBOL        HEND_ADDR
+  X:0007H         SYMBOL        IN_STRING
+  C:2143H         SYMBOL        LAST_LINE
+  D:0018H         SYMBOL        LBEG_ADDR
+  D:001AH         SYMBOL        LEND_ADDR
+  C:21F2H         SYMBOL        LOAD0
+  C:2205H         SYMBOL        LOAD1
+  C:2229H         SYMBOL        LOAD2
+  C:225CH         SYMBOL        LOAD_CMD_ERR
+  C:2258H         SYMBOL        LOAD_DONE
+  N:0037H         SYMBOL        OP_1PORT
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 19
+
+
+  N:0031H         SYMBOL        OP_1TIMER
+  N:0036H         SYMBOL        OP_2RCAP
+  N:0032H         SYMBOL        OP_2TIMER
+  N:0018H         SYMBOL        OP_ABS
+  N:000BH         SYMBOL        OP_ADD
+  N:0082H         SYMBOL        OP_ADDY
+  N:0040H         SYMBOL        OP_ADVGCHAR
+  N:000FH         SYMBOL        OP_AND
+  N:0022H         SYMBOL        OP_ATN
+  N:0020H         SYMBOL        OP_CBY
+  N:001CH         SYMBOL        OP_COS
+  N:0007H         SYMBOL        OP_CR_LFD
+  N:0024H         SYMBOL        OP_DBY
+  N:000CH         SYMBOL        OP_DIV
+  N:008AH         SYMBOL        OP_DIVY
+  N:0012H         SYMBOL        OP_EQUAL
+  N:0039H         SYMBOL        OP_EVAL
+  N:0009H         SYMBOL        OP_EXP
+  N:0090H         SYMBOL        OP_FP
+  N:0001H         SYMBOL        OP_FPINT
+  N:0029H         SYMBOL        OP_FREE
+  N:0013H         SYMBOL        OP_GEQUAL
+  N:0041H         SYMBOL        OP_GETASCI
+  N:0028H         SYMBOL        OP_GETCHAR
+  N:0017H         SYMBOL        OP_GREAT
+  N:003FH         SYMBOL        OP_GTXTCHAR
+  N:002EH         SYMBOL        OP_IE
+  N:0005H         SYMBOL        OP_INSTR
+  N:0019H         SYMBOL        OP_INT
+  N:009AH         SYMBOL        OP_INTFP
+  N:0098H         SYMBOL        OP_INTHEX
+  N:002FH         SYMBOL        OP_IP
+  N:002AH         SYMBOL        OP_LEN
+  N:0014H         SYMBOL        OP_LEQUAL
+  N:0016H         SYMBOL        OP_LESS
+  N:0021H         SYMBOL        OP_LEXP
+  N:0023H         SYMBOL        OP_LOG
+  N:002CH         SYMBOL        OP_MTOP
+  N:000AH         SYMBOL        OP_MULT
+  N:0088H         SYMBOL        OP_MULTY
+  N:0015H         SYMBOL        OP_NEQUAL
+  N:001BH         SYMBOL        OP_NOT1
+  N:0010H         SYMBOL        OP_OR
+  N:0030H         SYMBOL        OP_OTIMER
+  N:0080H         SYMBOL        OP_OUTCHAR
+  N:0006H         SYMBOL        OP_OUTSTR
+  N:0038H         SYMBOL        OP_PCON
+  N:0026H         SYMBOL        OP_PI
+  N:0003H         SYMBOL        OP_POPFP
+  N:0002H         SYMBOL        OP_PUSHFP
+  N:0027H         SYMBOL        OP_RND
+  N:001AH         SYMBOL        OP_SIGN
+  N:001EH         SYMBOL        OP_SIN
+  N:001FH         SYMBOL        OP_SQR
+  N:000DH         SYMBOL        OP_SUB
+  N:0084H         SYMBOL        OP_SUBY
+  N:0033H         SYMBOL        OP_T2CON
+  N:001DH         SYMBOL        OP_TAN
+  N:0034H         SYMBOL        OP_TCON
+  N:002DH         SYMBOL        OP_TIME
+  N:0035H         SYMBOL        OP_TMOD
+  N:0025H         SYMBOL        OP_XBY
+  N:000EH         SYMBOL        OP_XOR
+  N:002BH         SYMBOL        OP_XTAL
+  C:2268H         SYMBOL        RB1
+L51 LINKER/LOCATOR V3.22                                                                28/10/94  19:47:46  PAGE 20
+
+
+  C:2270H         SYMBOL        RB2
+  C:227DH         SYMBOL        RB3
+  C:2285H         SYMBOL        RB4
+  C:2262H         SYMBOL        READ_BYTE
+  C:2292H         SYMBOL        SAVEC1
+  C:2369H         SYMBOL        SAVEC10
+  C:229FH         SYMBOL        SAVEC2
+  C:22B6H         SYMBOL        SAVEC3
+  C:22C6H         SYMBOL        SAVEC4
+  C:22D4H         SYMBOL        SAVEC5
+  C:22D7H         SYMBOL        SAVEC6
+  C:22F2H         SYMBOL        SAVEC7
+  C:2322H         SYMBOL        SAVEC8
+  C:2345H         SYMBOL        SAVEC9
+  C:2289H         SYMBOL        SAVEC_ERR
+  C:2389H         SYMBOL        SAVEX1
+  C:245FH         SYMBOL        SAVEX10
+  C:2396H         SYMBOL        SAVEX2
+  C:23ADH         SYMBOL        SAVEX3
+  C:23BDH         SYMBOL        SAVEX4
+  C:23CBH         SYMBOL        SAVEX5
+  C:23CEH         SYMBOL        SAVEX6
+  C:23E9H         SYMBOL        SAVEX7
+  C:2419H         SYMBOL        SAVEX8
+  C:243BH         SYMBOL        SAVEX9
+  C:2380H         SYMBOL        SAVEX_ERR
+  C:284AH         SYMBOL        SYNTAX_ERROR
+  C:2173H         SYMBOL        SYNTAX_MSG
+  D:001CH         SYMBOL        TEMP
+  C:2116H         SYMBOL        TOKEN_TABLE
+  C:2100H         SYMBOL        VECTOR_TABLE
+  C:2818H         SYMBOL        VER1
+  C:21B4H         SYMBOL        VERSION
+  -------         ENDMOD        BASPLUS
+
+
+
+INTER-MODULE CROSS-REFERENCE LISTING
+------------------------------------
+
+
+NAME . . . . USAGE    MODULE NAMES
+----------------------------------
+
+BCK. . . . . CODE;    BAS52  BASPLUS  
+
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

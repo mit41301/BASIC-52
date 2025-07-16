@@ -1,0 +1,114 @@
+BAS52.TXT   
+Document file for the BASIC-52 software.
+This file was last revised 5/7/2003
+
+
+The original BASIC-52 was placed into the public domain by Intel.
+Gary Muhonen of Iota Systems, Inc. (gary@dcity.org) modified BASIC-52 by adding extensions called
+BASIC-52 PLUS. 
+
+These software is now in the public domain. 
+
+Gary Muhonen does not support this software in any way.
+
+
+There are four main vesions of basic supplied on this disk. 
+
+1. BAS52.ASM and BAS52FP.ASM
+       BASIC-52 upgraded by Iota Systems (but without the PLUS extensions)
+       Use BAS52.MAK to 'make' this version.
+       BAS52.HEX is a hex file of this version.
+
+2. BAS52.ASM, BAS52FP.ASM, and BASPLUS.ASM
+       BASIC-52 PLUS, which includes the Iota extensions
+       Use BASPLUS.MAK to 'make' this version.
+       BASPLUS.HEX is a hex file of this version.
+
+3. BAS52_B3.ASM, BAS52FP.ASM, and BASPLUS.ASM
+       BASIC-52 PLUS, but modified for a FIXED baud rate of
+       9600 baud, assuming a 11.0592MHz crystal. The
+       baud rate can be changed by changing timer2 setup
+       registers. This version is useful for use of
+       Basic-52 with the Dallas 80C320 processor.
+       Use BAS52_B3.MAK to 'make' this version.
+       BAS52_B3.HEX is a hex file of this version.
+
+4. INTEL.SRC and INTELFP.SRC  -- this is the original source code 
+       from Intel for BASIC-52.
+
+
+
+Here is a list of all the files.
+
+
+BAS52.DOC   is this file
+
+BAS52.ASM   the main BASIC-52 assembly source file for basic. This is the
+            version that is modified by Iota Systems and is Version 1.1b.
+            It is written for the Franklin assembler but can be modified
+            for other assemblers. Iota made several changes to the basic
+            from the original, and these changes are outlined at the
+            beginning of this file. BAS52.MAK can be used to 'make' 
+            this version of BASIC-52 (without the PLUS extensions)
+
+BAS52_B3.ASM  same as above, except modified for fixed baud rate of 9600
+            baud (assuming a crystal of 11.0592 MHz). This version is
+            useful for the Dallas 80C320 processor.
+
+BAS52FP.ASM this is the second file that makes up BASIC-52. It contains
+            the floating point math routines. It is also written for the
+            Franklin assembler.
+
+BASPLUS.ASM is the assembly source file for the extensions to BASIC-52
+            that are part of BASIC-52 PLUS. This file when assembled and
+            linked with the BAS52.ASM and BAS52FP.ASM above form the
+            product called BASIC-52 PLUS. The extensions to basic include
+            monitor commands for displaying and changing memory. Also
+            added are commands for uploading and downloading INTEL HEX
+            files.
+
+BAS52.HEX   this is an INTEL hex file for BASIC-52 Version 1.1b without
+            the PLUS. It is the result of assembling BAS52.ASM and
+            BAS52FP.ASM above, and linking the files together into one hex
+            file.
+
+BASPLUS.HEX is an INTEL hex file for BASIC-52 PLUS. It includes both BASIC-52
+            and the extensions.
+
+BAS52_B3.HEX is an INTEL hex file for BASIC-52 PLUS modified for 9600 baud.
+
+
+BAS52.MAK   is a 'make' file for assembling and linking the above files. It
+            is written for Microsoft's MAKE utility program, but easily
+            converted to other brands of MAKE. (Of course you will need
+            the Franklin assembler and linker too. Or you can change the
+            command lines to work with your assembler and linker).
+
+
+BASPLUS.MAK is a 'make file for assembling and linking all the files needed
+            to make up BASIC-52 PLUS.
+            It is written for Microsoft's MAKE utility program, but easily
+            converted to other brands of MAKE. (Of course you will need
+            the Franklin assembler and linker too. Or you can change the
+            command lines to work with your assembler and linker).
+
+BAS52_B3.MAK is a 'make file for assembling and linking all the files needed
+            to make up BASIC-52 PLUS with the fixed 9600 baud rate.
+            It is written for Microsoft's MAKE utility program, but easily
+            converted to other brands of MAKE. (Of course you will need
+            the Franklin assembler and linker too. Or you can change the
+            command lines to work with your assembler and linker).
+
+
+INTEL.SRC   this is the original source for BASIC-52 as supplied by INTEL.
+            It is for version 1.1.
+
+INTELFP.SRC this is the original source for the floating point routines in
+            BASIC-52.
+
+BASOP.INC   An include file (included in BASPLUS.ASM) that contains op-
+            codes for functions in BASIC-52. This file is also useful if
+            you are writing your own assembly language code that uses
+            functions built into BASIC-52.
+
+
